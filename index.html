@@ -4,37 +4,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Delivery food</title>
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header-box">
-                <div class="header-logo logo">
+    <div class="page-wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header-box">
+                    <div class="header-logo logo">
+                        <img src="./img/logo.png" alt="logo">
+                    </div>
+                    <div class="header-controls">
+                        <button class="btn btn-primary">
+                            <img src="./img/icons/user.png" alt="user">
+                            <span>Войти</span>
+                        </button>
+                        <button class="btn btn-outline">
+                            <img src="./img/icons/shopping-cart.png" alt="cart">
+                            <span>Корзина</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <main class="main">
+            <section class="banner">
+                <div class="container"> 
+                    <div class="banner-item">
+                        <h2 class="banner-title">Онлайн-сервис <br/>доставки еды на дом</h2>
+						<p class="banner-text">
+							Блюда из любимого ресторана привезет курьер в перчатках, маске и с антисептиком
+						</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="products">
+                <div class="container"> 
+                    <div class="products-header">
+                        <h3 class="products-header--title">Рестораны</h3>
+                        <input type="text" class="products-header--search"  placeholder="Поиск блюд и ресторанов">
+                    </div>
+                </div>
+            </section>
+        </main>
+    
+        <footer class="footer">
+            <div class="container footer-box">
+                <div class="footer-logo logo">
                     <img src="./img/logo.png" alt="logo">
                 </div>
-                <div class="header-controls">
-                    controls
+                <div class="footer-nav">
+                    <ul>
+                        <li>Ресторанам</li>
+                        <li>Курьерам</li>
+                        <li>Пресс-центр</li>
+                        <li>Контакт</li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <img src="./img/social/insta.png" alt="insta" class="social-image">
+                    <img src="./img/social/facebook.png" alt="FB" class="social-image">
+                    <img src="./img/social/vk.png" alt="VK" class="social-image">
                 </div>
             </div>
-        </div>
-    </header>
-    
-    <main class="main">
-        <div class="container"> 
-            container
-        </div>
-    </main>
-
-    <footer class="footer">
-        <div class="container footer-box">
-            <div class="footer-logo logo">
-                <img src="./img/logo.png" alt="logo">
-            </div>
-            <div class="footer-nav">nav</div>
-            <div class="footer-social">social</div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </body>
 </html>
